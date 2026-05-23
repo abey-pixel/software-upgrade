@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .hero-banner{
+            background-color: cyan;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: black;
+            animation: fadeup 1s ease-in-out;
+
+        }
+        .content{
+            max-width: 600px;
+        }
+        
+        .hero-banner h1{
+            font-size: 10vh;
+        }
+        .hero-banner nav{
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        .hero-banner p{
+            font-size: 2vw;
+            margin-bottom: 30px;
+        }
+        .hero-banner button{
+            font-size: 30px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px black;
+            animation: popfade 300ms ease-out;
+            
+        }
+        @keyframes fadeup{
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        
+
+    </style>
+    <section class="hero-banner">
+        <div class="content">
+            <nav>
+                <a href="#" target="_blank">Free trial</a>
+                <a href="#" target="_blank">Watch Demo</a>
+            </nav>
+            <h1>Hero Banner</h1>
+            <p>The all in one platform that builds a nation</p>
+            <button>Start Here</button>
+        </div>
+      
+    </section>
+</body>
+</html>
