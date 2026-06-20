@@ -4,74 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <style>
-        .hero-banner{
-            background-color: cyan;
-            min-height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            color: black;
-            animation: fadeup 1s ease-in-out;
-
-        }
-        .content{
-            max-width: 600px;
-        }
         
-        .hero-banner h1{
-            font-size: 10vh;
-        }
-        .hero-banner nav{
-            display: flex;
-            justify-content: flex-end;
-            
-        }
-        .hero-banner p{
-            font-size: 2vw;
-            margin-bottom: 30px;
-        }
-        .hero-banner button{
-            font-size: 30px;
-            background-color: red;
-            color: white;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-            box-shadow: 5px 5px 5px black;
-            animation: popfade 300ms ease-out;
-            
-        }
-        @keyframes fadeup{
-            from {
-                opacity: 0;
-                transform: translateY(30px);
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-            }
-            to{
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        
 
-    </style>
-    <section class="hero-banner">
-        <div class="content">
-            <nav>
-                <a href="#" target="_blank">Free trial</a>
-                <a href="#" target="_blank">Watch Demo</a>
-            </nav>
-            <h1>Hero Banner</h1>
-            <p>The all in one platform that builds a nation</p>
-            <button>Start Here</button>
-        </div>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
       
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #cafdff;
+}
+
+header {
+    background-color: #eadcff;
+    height: 100vh;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 68px;
+}
+
+p {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+button {
+    background-color: #05c7cf;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+.logo {
+    width: 60px;
+}
+
+ul {
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    padding: 48px 0;
+    background-color: #f8ffdc;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+.section__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#discord {
+    background-color: #cefeff;
+}
+
+.lotto-money {
+    width: 300px;
+}
+
+#contact {
+    background-color: #dce9ff;
+
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 32px 32px;
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+footer {
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-logo {
+    max-width: 40px;
+    margin-bottom: 16px;
+    
+}
+
+.footer-links {
+    margin-bottom: 32px;
+    padding: 0 16px;
+}
+
+@media (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--button {
+        max-width: 240px;
+    }
+
+
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+
+
+
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .section__description {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        
+        
+    }
+
+    #discord {
+        margin: 3px 0;
+    }
+
+    .trans-button {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        padding-top: 20px;
+    }
+
+    .footer-links {
+        padding: 0 4px;
+    }
+
+
+
+    
+}
+    </style>
+    <section>
+        <nav>
+            <img src="frontend logo.webp" class="logo" alt="Frontend Simplify">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#discord">Discord</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="row">
+
+            
+            <div class="home__description">
+                <h1>Best place to learn frontend</h1>
+                <p>Go from being an absolute beginner to pro with a simplified process</p>
+                <button class="home__description--button">Start now</button>
+            </div>
+            <figure>
+                <img src="coding image.webp" alt="Home page image">
+            </figure>
+            </div>
+        </header>
     </section>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            
+            <div class="section__description">
+                
+            
+            <div>
+                <p>bcoiddh uehvrhvio cjcbcuechcij jcheichi cuuuwu iruirhuov ur
+                    uhuwuhhuvhovuhvifv rvhrviijv9v9v whdbiueh09iw9ie uvihw09v99u9u bfejfiof chofpi0jiojs chfud9wjwsx wdgfhdjdw dudu8w9duw9uiw du9hd3uh3eui0cehu98 f8ef8uufuf f8yef8e8uvd 8f89f8uf8uv9d f7y4f4f84fhfhrf 4ryf48y489f 48y484849uf4 4fy8rur9ugugf r8yr585848h4ug r8g48fguffg4r jr858g8g5u4ug4f r8rug4ufguu4fg 4848fu8yurhr908fg4 jbdwohdwjokce veu989uf90euf9ec 
+                    nrovoij-ofef vhrivjei9eif-0i30-if fhf489jf9f4 fuf9v r89fijv0e r
+                </p>
+                <p>
+                    tukfutcyucyuc chgceytcyc7ywc89y89c cygcoiccuchc ucuy989w80c90bgigijeig5i gi485495 bu9g8t8jv bb8jt4949 bg89g99b th9jth9g9tr9 bi45j54h95 4h9j490h95 4gij49h 
+                    jituoithijth09jt90jt909hjt t4ijt90h09h h t4i0hi049049h9h i4ijtj9n t0rknmtoy bi05onmyo-m0-0-n kti0hi409t4 h945u44509h 544i4094jh t94i50h9j 4i9tijh9 h05490
+                    t4u94i9g0jgh t45g90jbt9549g 54i0hj954 h045j954954 
+                </p>
+            </div>
+            <figure class="about-image">
+                <img src="coding image.webp" alt="Home page image">
+            </figure>
+            </div>
+            
+        
+        </section>
+    </main>
+
+    <section id="discord">
+        <h2>Discord</h2>
+        <div class="section__description">
+        <figure>
+            <img src="dicsord image.webp" class="lotto-money" alt="Dicord">
+        </figure>
+        <div>
+            <p>
+                coiddh uehvrhvio cjcbcuechcij jcheichi cuuuwu iruirhuov ur
+                    uhuwuhhuvhovuhvifv rvhrviijv9v9v whdbiueh09iw9ie uvihw09v99u9u bfejfiof chofpi0jiojs chfud9wjwsx wdgfhdjdw dudu8w9duw9uiw du9hd3uh3eui0cehu98 f8ef8uufuf f8yef8e8uvd 8f89f8uf8uv9d f7y4f4f84fhfhrf 4ryf48y489f 48y484849uf4 4fy8rur9ugugf r8yr585848h4ug r8g48fguffg4r jr858g8g5u4ug4f r8rug4ufguu4fg 4848fu8yurhr908fg4 jbdwohdwjokce veu989uf90euf9ec 
+                    nrovoij-ofef vhrivjei9eif-0i30-if fhf489jf9f4 fuf9v r89fijv0e rjvdhrufv rejeu9f49e e4fjqier84t 4gjgjb br89 8gu94g hgrh8g8ug 8g
+            </p>
+            <p>
+                coiddh uehvrhvio cjcbcuechcij jcheichi cuuuwu iruirhuov ur
+                    uhuwuhhuvhovuhvifv rvhrviijv9v9v whdbiueh09iw9ie uvihw09v99u9u bfejfiof chofpi0jiojs chfud9wjwsx wdgfhdjdw dudu8w9duw9uiw du9hd3uh3eui0cehu98 f8ef8uufuf f8yef8e8uvd 8f89f8uf8uv9d f7y4f4f84fhfhrf 4ryf48y489f 48y484849uf4 4fy8rur9ugugf r8yr585848h4ug r8g48fguffg4r jr858g8g5u4ug4f r8rug4ufguu4fg 4848fu8yurhr908fg4 jbdwohdwjokce veu989uf90euf9ec 
+                    nrovoij-ofef vhrivjei9eif-0i30-if fhf489jf9f4 fuf9v r89fijv0e rjvdhrufv rejeu9f49e e4fjqier84t 4gjgjb br89 8gu94g 
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section>
+
+    <section id="contact">
+        <h2>contact</h2>
+        <form>
+            <span>Email</span>
+            <input type="text" placeholder="Abey@example.com">
+            <span>Message</span>
+            <textarea type="text" placeholder="cool website, lets get connected"></textarea>
+            <button class="trans-button">Contact Us!</button>
+
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <img class="footer-logo" src="frontend logo.webp" alt="">
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a  href="#dicord">Discord</a>
+            <a  href="#contact">Contact</a>
+            <a  href="#course">Courses</a>
+
+        </div>
+        <p>Copyright Frontend Simplified</p>
+    </footer>
 </body>
 </html>
