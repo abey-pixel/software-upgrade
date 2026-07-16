@@ -431,6 +431,8 @@ footer {
 
 
 /* SMALL PHONES, LARGE SMARTPHONES */
+
+
 @media (max-width: 550px) {
     .header__description {
         padding: 0 24px;
@@ -446,7 +448,7 @@ footer {
         font-size: 18px;
     }
 
-    .books {
+    .book {
         width: 50%;
     }
 }
