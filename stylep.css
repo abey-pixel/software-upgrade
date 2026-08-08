@@ -715,7 +715,7 @@ section {
     text-transform: uppercase;
 }
 
-#pricing,
+#pricing
 .section__title {
     text-align: center;
 
@@ -1373,6 +1373,21 @@ footer {
     font-weight: 500;
     position: relative;
     cursor: pointer;
+}
+
+.footer__column--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #f7fafc;
+    transition: width 300ms ease;
+}
+
+.footer__column--link:hover::after {
+    width: 100%;
 }
 
 
