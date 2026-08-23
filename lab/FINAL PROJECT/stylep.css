@@ -42,7 +42,6 @@ nav {
     font-weight: 900;
     font-size: 24px;
     margin-left: 12px;
-    padding-bottom: 12px;
     letter-spacing: 0.6px;
     
 }
@@ -1527,6 +1526,55 @@ img {
 
 
 
+@media (max-width: 1280px) {
+        header .row {
+        align-items: flex-end;
+    }
+
+        h1 {
+        font-size: 36px;
+        color: #1a202c;
+        line-height: 1.25;
+    }
+
+        .header__description--para {
+        font-size: 16px;
+    }
+
+        .header__customers {
+        padding-right: 64px;
+    }
+
+        .header__img {
+        max-width: 512px;
+    }
+
+       .steps__grid {
+        height: 5rem;
+        width: 5rem;
+        bottom: -50px;
+    }
+
+        .plan__bottom {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+        .plan__button {
+        max-width: none;
+    }
+
+    .testimonials__img {
+        width: 40%;
+    }
+
+        .testimonials__description {
+        width: calc(100% - 40%);
+    }
+}
+
+
+
 @media (max-width: 1024px) {
         .nav__links {
         display: none;
@@ -1663,52 +1711,6 @@ img {
     }
 }
 
-@media (max-width: 1280px) {
-        header .row {
-        align-items: flex-end;
-    }
-
-        h1 {
-        font-size: 36px;
-        color: #1a202c;
-        line-height: 1.25;
-    }
-
-        .header__description--para {
-        font-size: 16px;
-    }
-
-        .header__customers {
-        padding-right: 64px;
-    }
-
-        .header__img {
-        max-width: 512px;
-    }
-
-       .steps__grid {
-        height: 5rem;
-        width: 5rem;
-        bottom: -50px;
-    }
-
-        .plan__bottom {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-        .plan__button {
-        max-width: none;
-    }
-
-    .testimonials__img {
-        width: 40%;
-    }
-
-        .testimonials__description {
-        width: calc(100% - 40%);
-    }
-}
 
 
 @media (max-width: 768px) {
@@ -1762,6 +1764,10 @@ img {
         margin-top: 64px;
         text-align: center;
     }
+
+        .quality__img--wrapper {
+         margin: 0;
+}
 
         .section__para {
         font-size: 14px;
